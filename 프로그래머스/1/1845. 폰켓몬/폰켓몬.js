@@ -1,12 +1,7 @@
 function solution(nums) {
-    var answer = 0;
-    let new_arr = [...new Set(nums)];
+    const Max_count = nums.length/2;
+    const new_arr = [...new Set(nums)];
     
-    console.log(new_arr)
-    
-    if ((nums.length/2) > new_arr.length)
-        answer = new_arr.length
-    else
-        answer = nums.length/2
-    return answer;
+    return Max_count > new_arr.length? new_arr.length:Max_count
+
 }
